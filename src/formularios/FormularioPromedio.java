@@ -4,6 +4,8 @@
  */
 package formularios;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author GlennB
@@ -213,7 +215,17 @@ public class FormularioPromedio extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-       Double cal1,cal2,cal3,cal4,cal5;
+    try {
+        // Validar que ningún campo esté vacío
+        if (jTextField1.getText().isEmpty() || jTextField2.getText().isEmpty() ||
+            jTextField3.getText().isEmpty() || jTextField4.getText().isEmpty() ||
+            jTextField5.getText().isEmpty()) {
+            
+            JOptionPane.showMessageDialog(this, "Por favor, llena todos los campos.");
+            return;
+        }
+       
+        Double cal1,cal2,cal3,cal4,cal5;
        Double resultadoPromedio;
        
        cal1 = Double.valueOf(jTextField1.getText());
@@ -225,7 +237,9 @@ public class FormularioPromedio extends javax.swing.JFrame {
        resultadoPromedio = (cal1 + cal2 + cal3 + cal4 + cal5)/5;
        
        jtext6.setText(String.valueOf(resultadoPromedio));
-
+    } catch (NumberFormatException e) {
+        JOptionPane.showMessageDialog(this, "Solo se permite ingresar números en los campos.");
+    }
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1MouseClicked
 
