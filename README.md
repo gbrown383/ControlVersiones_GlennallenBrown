@@ -1,12 +1,12 @@
 # ControlVersiones_GlennallenBrown
 programa control de versiones con clase principal main
 
-Este proyecto fue desarrollado como parte de una práctica de control de versiones utilizando Git y GitHub, con enfoque en el desarrollo de una interfaz gráfica en Java mediante NetBeans.
+Este proyecto es una tarea de control de versiones utilizando Git y GitHub, con enfoque en el desarrollo de una interfaz gráfica en Java usando NetBeans v26.
 
-Las funcionalidades principales son:
+Las funciones principales son:
 
 Interfaz gráfica amigable para el usuario
-Registro de 5 calificaciones
+Registro de 5 calificaciones y calculo de promedio.
 3 Botones , Calcular, Limpiar, salir.
 Cálcular promedio
 Limpiar datos ingresados
