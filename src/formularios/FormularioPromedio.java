@@ -230,7 +230,7 @@ public class FormularioPromedio extends javax.swing.JFrame {
        
        cal1 = Double.valueOf(jTextField1.getText());
        cal2 = Double.valueOf(jTextField2.getText());
-       cal3 = Double.valueOf(jTextField3.getText());
+       cal3 = Double.valueOf(jTextField3.getText()); 
        cal4 = Double.valueOf(jTextField4.getText());
        cal5 = Double.valueOf(jTextField5.getText());
        
